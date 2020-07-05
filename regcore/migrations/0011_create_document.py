@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.TextField(serialize=False, primary_key=True)),
                 ('doc_type', models.SlugField(max_length=20)),
-                ('version', models.SlugField(max_length=20, null=True, blank=True)),
+                ('version', models.SlugField(max_length=50, null=True, blank=True)),
                 ('label_string', models.SlugField(max_length=200)),
                 ('text', models.TextField()),
                 ('title', models.TextField(blank=True)),
